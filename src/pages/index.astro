@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Cepa Teatro — Sembrando la curiosidad en las niñas, niños y adolescentes por los libros',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,79 +25,53 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Agendar cita',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Leer más', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/cepa-teatro-logo.jpg', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      En<span class="text-accent dark:text-white highlight"> Cepa Teatro</span> sembramos la curiosidad en las niñas, niños y adolescentes por los libros
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Cepa Teatro Cosechamos ciudadanas y ciudadanos con un pensamiento crítico cultivado a través del hábito de la lectura
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <!--<Note />-->
 
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    id="experiencia"
+    tagline="Experiencia"
+    title="Experiencia"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Cepa Teatro',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          `Nace en 2014 conformada por egresados de UABC con el proósito de hacer Teatro de Calidad, Itinerante y de Carácter Social. Colaborando con instituciones de gobierno, educativas, sector privado, foros independientes, público por taquilla...`,
+        icon: 'tabler:ballpen',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Itinerante',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          `¿Donde hago falta? Contacto con la gente en la periferia, donde no llegan los programas culturales.`,
+        icon: 'tabler:books'
       },
       {
-        title: 'Best Practices',
+        title: 'Calidad y caracter social',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
+          `Calidad en los contenidos y que agreguen valor a nuestro público`,
+        icon: 'tabler:book'
+      }
     ]}
   />
 
@@ -105,43 +79,36 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="¿Qué es una Guerra de Cuentos?"
+    title="¿Qué es una Guerra de Cuentos?"
+    subtitle="Dos guerreros de la tradición oral interpretan sus mejores cuentos para ganar la preferencia del público"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Antes',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'El arbitro entrevista a los guerreros para conocer detalles importantes de los cuentos que van a competir',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Durante',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Los guerreros tienen 10 minutos para desarrollar su historia. A la mitad hacemos una trivia y la persona del público que contesta correctamente introduce un elemento sorpresa en la narración',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Al final',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
+          'Hacemos una votación para que el público elija el ganador de la contienda. Y el premio del ganador es un dibujo del respetable',
+      }
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/obra-teatro.png',
+      alt: 'Obra de teatro',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--<Content
     isAfterContent
     items={[
       {
@@ -174,11 +141,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content>-->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--<Content
     isReversed
     isAfterContent
     items={[
@@ -212,98 +179,67 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content>-->
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    tagline="¿Qué es una Guerra de Cuentos?"
+    title="¿Qué es una Guerra de Cuentos?"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Formato',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Dos guerreros de la tradición oral interpretan sus mejores cuentos para ganar la preferencia del público",
+        icon: 'tabler:book',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Antes',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "El arbitro entrevista a los guerreros para conocer detalles importantes de los cuentos que van a competir",
+        icon: 'tabler:users',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Durante',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          "Los guerreros tienen 10 minutos para desarrollar su historia. A la mitad hacemos una trivia y la persona del público que contesta correctamente introduce un elemento sorpresa en la narración",
+        icon: 'tabler:question-mark',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Al final',
+        description:
+          "Hacemos una votación para que el público elija el ganador de la contienda. Y el premio del ganador es un dibujo del respetable",
+        icon: 'tabler:trophy',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: '~/assets/images/guerra-de-cuentos.jpeg',
+      alt: 'Guerra de cuentos',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Valor agregado"
+    tagline="Valor agregado"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Mejores ciudadanos',
+        description: "Beneficios de la lectura, empatía, pensamiento crítico, paz, cultura general, empoderamiento",
+        icon: 'flat-color-icons:conference-call',
       },
       {
-        title: 'Heros',
+        title: 'ESR',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          "Registro de actividades para el posicionamiento dentro del CEMEFI hacia dentro y hacia afuera",
+        icon: 'flat-color-icons:department',
       },
       {
-        title: 'Features',
+        title: 'Apoyo fiscal',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+          "Cepa Teatro colabora con loft, espacio de creación A.C. Deducible hasta por el 7% de ISR",
+        icon: 'flat-color-icons:money-transfer',
       },
     ]}
   >
@@ -314,69 +250,69 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+  <!--<BlogLatestPosts
+    title="Descubre más contenido en nuestro Blog"
+    information={`El blog se utiliza para mostrar información y noticias sobre Cepa Teatro.
+                        Cada nuevo artículo será un paso importante para conocer más sobre nuestras actividades, eventos y proyectos.
+                        Gracias por seguirnos y apoyar el teatro.
                 `}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
+    title="Preguntas Frecuentes"
+    subtitle="Encuentra respuestas a las preguntas más comunes sobre Cepa Teatro y nuestras actividades."
+    tagline="Preguntas Frecuentes"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: '¿Qué es Cepa Teatro?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Cepa Teatro es una compañía fundada en 2014 por egresados de UABC con el propósito de hacer Teatro de Calidad, Itinerante y de Carácter Social.',
       },
       {
-        title: 'What do I need to start?',
+        title: '¿Qué es una Guerra de Cuentos?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Una Guerra de Cuentos es un evento donde dos guerreros de la tradición oral interpretan sus mejores cuentos para ganar la preferencia del público.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: '¿Cómo puedo participar en una Guerra de Cuentos?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Puedes participar asistiendo a nuestros eventos y votando por tu guerrero favorito. También puedes seguirnos en nuestras redes sociales para más información.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: '¿Dónde se realizan las presentaciones de Cepa Teatro?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Realizamos presentaciones en diversas localidades, incluyendo instituciones de gobierno, educativas, sector privado y foros independientes.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: '¿Cómo puedo apoyar a Cepa Teatro?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Puedes apoyar a Cepa Teatro asistiendo a nuestras presentaciones, participando en nuestras actividades y siguiendo nuestras redes sociales.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: '¿Qué beneficios tiene la lectura?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'La lectura fomenta el pensamiento crítico, la empatía, la paz, la cultura general y el empoderamiento.',
       },
     ]}
-  />
+/>
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!--<Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  />-->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!--<CallToAction
     actions={[
       {
         variant: 'primary',
@@ -395,5 +331,5 @@ const metadata = {
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction>-->
 </Layout>

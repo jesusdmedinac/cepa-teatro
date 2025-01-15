@@ -43,6 +43,9 @@ export default defineConfig({
           'voice-presentation',
           'business-contact',
           'database',
+          'conference-call',
+          'department',
+          'money-transfer'
         ],
       },
     }),
